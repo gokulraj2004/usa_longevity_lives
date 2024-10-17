@@ -19,7 +19,7 @@ st.set_page_config(page_title="U.S. Life Expectancy Explorer", layout="wide")
 def load_data():
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     data_path = os.path.join(BASE_DIR, "data", "chr_census_feature_engineered_final.csv")
-    logo_path = os.path.join(BASE_DIR, "assets", "omdena_logo.png")
+    logo_path = os.path.join(BASE_DIR, "assets", "Omdena_logo.png")
     logo = Image.open(logo_path)
     #st.image(logo, width=300)
 
@@ -138,7 +138,7 @@ def get_polar_area_chart(input_data):
         opacity=0.8,
         marker=dict(
             color=list(normalized_data.values()),
-            colorscale='Plasma',
+            colorscale='Magma',
             showscale=True,
             colorbar=dict(title='Normalized Value')
         )
