@@ -12,7 +12,21 @@ import pickle
 import logging
 
 # Set page config
-st.set_page_config(page_title="U.S. Life Expectancy Explorer", layout="wide")
+st.set_page_config(page_title="The Longevity Project", layout="wide")
+
+# Add custom CSS for the project title
+st.markdown("""
+    <style>
+    .big-font {
+        font-size:50px !important;
+        color: #ffffff;  /* Changed to white */
+        font-weight: bold;
+        text-align: center;
+        padding: 20px 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);  /* Increased shadow for better visibility */
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
 # Optimize data loading
 @st.cache_data
@@ -138,7 +152,7 @@ def get_polar_area_chart(input_data):
         opacity=0.8,
         marker=dict(
             color=list(normalized_data.values()),
-            colorscale='Magma',
+            colorscale='Viridis',
             showscale=True,
             colorbar=dict(title='Normalized Value')
         )
@@ -213,7 +227,7 @@ def main():
     if page == "Overview":
         video_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "bluezonevideo.mp4")
         set_video_background(video_path)
-
+        st.markdown('<p class="big-font">The Longevity Project</p>', unsafe_allow_html=True)
         st.title("Exploring Life Expectancy in the U.S.")
         st.write("""
         This app explores factors influencing life expectancy across the United States, 
