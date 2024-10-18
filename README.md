@@ -2,7 +2,7 @@
 
 This Streamlit web application explores life expectancy across U.S. counties, highlighting disparities between rural and urban areas. The app allows users to visualize factors influencing life expectancy, including healthcare access, environmental conditions, and socioeconomic factors, with interactive maps and statistical summaries.
 
-[App Preview](https://longevitylivesdeploy-sehas.streamlit.app/)
+[App Preview](https://uslongevitylives-kojmj.streamlit.app/)
 
 ## Table of Contents
 
