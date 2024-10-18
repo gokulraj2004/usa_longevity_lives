@@ -30,8 +30,7 @@ The **U.S. Life Expectancy Explorer** allows users to analyze life expectancy tr
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/life-expectancy-explorer.git
-    cd life-expectancy-explorer
+    git clone https://github.com/gokulraj2004/usa_longevity_lives.git
     ```
 
 2. **Install the dependencies**:
@@ -50,7 +49,7 @@ The **U.S. Life Expectancy Explorer** allows users to analyze life expectancy tr
 Run the following command to start the Streamlit app locally:
 
 ```bash
-streamlit run app.py
+streamlit run app1.py
 ```
 
 Once the server starts, open your browser and navigate to `http://localhost:8501` to explore the app.
