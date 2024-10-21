@@ -26,33 +26,25 @@ The **U.S. Life Expectancy Explorer** allows users to analyze life expectancy tr
 - **Correlation and Regression Analysis**: Users can analyze the relationship between various factors and life expectancy through correlation matrices and regression plots.
 - **Video Background**: The app features an engaging video background for enhanced user experience.
   
-## Installation
+Installation
+To run this project locally, follow these steps:
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/gokulraj2004/usa_longevity_lives.git
-    ```
+Clone the repository:
+git clone https://github.com/gokulrajs2004/usa_longevity_lives.git
+cd usa_longevity_lives
 
-2. **Install the dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+Create a virtual environment (optional but recommended):
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
-3. **Download the dataset**:
-   Place the `chr_census_featured_engineered.csv` dataset inside the `data` folder. The dataset should contain life expectancy data across U.S. counties.
+Install the required packages:
+pip install -r requirements.txt
 
-4. **Add assets**:
-   Place the video file (`bluezonevideo.mp4`) in the `assets` folder to be used as the app's background.
 
-## Usage
-
-Run the following command to start the Streamlit app locally:
-
-```bash
-streamlit run app1.py
-```
-
-Once the server starts, open your browser and navigate to `http://localhost:8501` to explore the app.
+Usage
+To run the Streamlit app:
+streamlit run app.py
+Navigate through the different pages using the sidebar to explore various aspects of life expectancy in the U.S.
 
 ### User Interaction
 
