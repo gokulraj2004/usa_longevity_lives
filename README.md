@@ -62,7 +62,7 @@ Navigate through the different pages using the sidebar to explore various aspect
 
 ## Data Source
 
-The dataset used in this app is derived from the [County Health Rankings](https://www.countyhealthrankings.org/) and census data. It includes life expectancy and other health-related factors across U.S. counties.
+The dataset used in this app is derived from the [County Health Rankings](https://www.countyhealthrankings.org/) and census data(https://www.census.gov/). It includes life expectancy and other health-related factors across U.S. counties.
 
 ## Contributing
 
